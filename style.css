@@ -50,8 +50,8 @@ input[type="email"]{
 }
 
 /* 11. Give both p elements inside the 3rd div a hot pink background */
-div:nth-of-type(3n) p{
-    background-color:  magenta;
+div:nth-of-type(3) p{
+    background-color:  hotpink;
 }
 
 /* 12. Give the 2nd p element inside the 3rd div a 7px solid rgb(255, 255, 255) border */
@@ -60,7 +60,7 @@ div:nth-of-type(3) p:nth-of-type(2){
 }
 
 /* 13. Make the text in the em tag/element in the 3rd div element seashell color and 25px font (font-size:25px) */
-em{
+div:nth-of-type(3) em{
     color: seashell;
     font-size:25px;
 }
