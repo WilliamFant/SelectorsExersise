@@ -76,9 +76,9 @@ label{
 }
 
 /* 3. Make the first letter of the element with id ‘important’ lime color and 90px font size */
-#important{
+#important::first-letter{
     color: lime;
-    size: 90px;
+    font-size: 90px;
 }
 
 /* 4. Make the h1 element’s color change to navy when hovered over */
