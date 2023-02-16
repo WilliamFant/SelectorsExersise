@@ -2,59 +2,93 @@
 body{
     background-color: #CED4D8;
 }
+
 /* 2. Make the h1 element #AC6AC7 */
 h1{
     color: #AC6AC7;
 }
+
 /* 3. Make all h2 elements rgb(255,165,0) */
 h2{
     color: rgb(255,165,0);
 }
+
 /* 4. Make all li elements blue */
 li{
     color: blue;
 }
+
 /* 5. Change the background on every paragraph to be gold */
 p{
     background-color: gold;
 }
+
 /* 6.Make all inputs with the type of text or email have a 5px pink dotted border */
-label{
-    border: 5px dotted pink;
+input[type="text"],[type="email"]{
+    border:5px dotted pink;
 }
+
 /* 7. Give everything with the class ‘first’ an #fff background */
 .first{
     background-color: #fff;
 }
+
 /* 8. Give the element with id ‘important’ a 3px blue dashed border (Use hexadecimal to create a blue color) */
 #important{
     border: 3px dashed #00f;
 }
+
 /* 9. Make all the p elements that are nested inside of divs 30px font (font-size: 30px) */
+/* this one makes all p under div 30px */
 div > p{
     font-size: 30px;
 }
+
 /* 10. Make only inputs with type ‘email’ have a #808080 background */
-#email{
+input[type="email"]{
     background-color: #808080;
 }
+
 /* 11. Give both p elements inside the 3rd div a hot pink background */
-div > p:nth-of-type(3n){
+div:nth-of-type(3n) p{
     background-color:  magenta;
 }
+
 /* 12. Give the 2nd p element inside the 3rd div a 7px solid rgb(255, 255, 255) border */
-p:last-child{
+div:nth-of-type(3) p:nth-of-type(2){
     border:7px solid rgb(255, 255, 255);
 }
+
 /* 13. Make the text in the em tag/element in the 3rd div element seashell color and 25px font (font-size:25px) */
 em{
     color: seashell;
     font-size:25px;
 }
+
 /* BONUS */
 /* 1. Make all “checked” checkboxes have a left margin of 40px */
+input:checked{
+    margin-left: 40px;
+}
 /* 2. Make the text in all the label elements lowercase (Remember you cannot change the HTML file) */
+label{
+    text-transform: lowercase;
+}
+
 /* 3. Make the first letter of the element with id ‘important’ lime color and 90px font size */
+#important{
+    color: lime;
+    size: 90px;
+}
+
 /* 4. Make the h1 element’s color change to navy when hovered over */
+h1:hover{
+    color: navy;
+}
+
 /* 5. Make the a tags that have been visited silver */
+a:visited{
+    color: silver;
+}
+
 /* When finished, create a repository in the “SelectorsExercise” Folder as well as on GitHub. Add and commit everything in the SelectorsExercise folder and push it up to your GitHub repository. Then paste the link to your GitHub repository page in the form. */
